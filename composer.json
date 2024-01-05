@@ -1,0 +1,7 @@
+{
+    "name": "santiago/proyecto",
+    "description": "Landing page para EcoBactery",
+    "require": {
+        "phpmailer/phpmailer": "^6.5"
+    }
+}

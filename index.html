@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ecobactery</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/Icon.ico" rel="icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Enlace al archivo CSS de Bootstrap desde un CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap.min.css">
+
+    <!-- Enlace a jQuery desde un CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Enlace al archivo JavaScript de Bootstrap desde un CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Contenedor para el logo de carga -->
+    <div id="loading-container">
+        <img src="img/logo.png" alt="Logo de carga">
+    </div>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+    
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-blanco sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-blanco navbar-light py-2 py-lg-0">
+                <!-- Alinea el logo al centro -->
+                <a href="index.html" class="navbar-brand mx-auto">
+                    <img class="img-fluid" src="img/logo.png" alt="Logo">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <!-- Alinea los enlaces a la izquierda -->
+                        <a href="#index" class="nav-item nav-link">Inicio</a>
+                        <a href="#about" class="nav-item nav-link">Nosotros</a>
+                        <a href="#services" class="nav-item nav-link">Servicios</a>
+                        <a href="#blog" class="nav-item nav-link">Blog</a>
+                        <a href="#contact" class="nav-item nav-link">Contáctanos</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+
+    <div class="container-fluid px-0 mb-5" id="index">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/Inicio.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 text-center">
+                                    <p class="fs-4 text-white animated zoomIn">Bienvenido a <strong class="text-dark">Ecobactery</strong></p>
+                                    <h1 class="display-1 text-dark mb-4 animated zoomIn">Fumigación y control de plagas</h1>
+                                    <div>
+                                        <a href="#about" class="btn btn-light rounded-pill py-2 px-5 animated zoomIn">Nosotros</a>
+                                        <a href="#services" class="btn btn-light-nobg rounded-pill py-2 px-5 animated zoomIn">Servicios</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/Inicio2.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 text-center">
+                                    <p class="fs-4 text-white animated zoomIn">Bienvenido a <strong class="text-dark">Ecobactery</strong></p>
+                                    <h1 class="display-1 text-dark mb-4 animated zoomIn">Fumigación y control de plagas</h1>
+                                    <div>
+                                        <a href="#about" class="btn btn-light rounded-pill py-2 px-5 animated zoomIn">Nosotros</a>
+                                        <a href="#services" class="btn btn-light-nobg rounded-pill py-2 px-5 animated zoomIn">Servicios</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Puedes agregar contenido adicional aquí si es necesario -->
+                </div>
+                <!-- Agrega más elementos .carousel-item aquí si es necesario -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="about">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 text-end">
+                            <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" data-wow-delay="0.1s" src="img/fug1.jpeg" alt="">
+                            <img class="img-fluid bg-white w-50 wow fadeIn" data-wow-delay="0.2s" src="img/fug..jpeg" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img class="img-fluid bg-white w-50 mb-3 wow fadeIn" data-wow-delay="0.3s" src="img/riego1.jpeg" alt="">
+                            <img class="img-fluid bg-white w-100 wow fadeIn" data-wow-delay="0.4s" src="img/fug3.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="section-title">
+                        <p class="fs-5 fw-medium fst-italic text-primary">Sobre nosotros</p>
+                        <h1 class="display-6">Ecobactery - Fumigación y control de plagas</h1>
+                    </div>
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm">
+                            <h5>Tu tranquilidad, nuestra prioridad: Expertos en control y fumigación de plagas</h5>
+                            <p class="mb-0">Comprendemos la importancia de proteger tu hogar, negocio y/o empresa de las plagas. 
+                                Ofrecemos servicios especializados en control y fumigación de plagas en los sectores comercial, 
+                                hospitalario, residencial e industrial.</p>
+                            <p></p>
+                            <h5>Nuestro objetivo</h5>
+                            <p class="m-0"> Brindarte soluciones efectivas y personalizadas para garantizar
+                                 un ambiente seguro y libre de plagas. Puedes confiar en nuestros expertos para proteger tus espacios
+                                  y mantenerlos libres de cualquier amenaza de plagas.</p>
+                        
+                            <!-- Agrega una clase 'hidden' para ocultar los siguientes enunciados -->
+                            <h5 class="hidden">Misión</h5>
+                            <p class="m-0 hidden">"Ofrecemos servicios de fumigación, desinfección y descontaminación en áreas de distintos 
+                                niveles de riesgo: zonas blancas, grises y negras. Utilizamos productos químicos y orgánicos diseñados 
+                                con técnicas innovadoras, que son completamente biodegradables y respetuosos con el medio ambiente, 
+                                contribuyendo así a preservar la salud de la población."</p>
+                            <h5 class="hidden">Visión</h5>
+                            <p class="m-0 hidden">Innovamos en técnicas de asepsia y descontaminación que son universales, integrales, 
+                                sustentables, efectivas y de alta calidad. Nuestro objetivo es prevenir enfermedades causadas por factores 
+                                biológicos como bacterias y virus, estableciendo barreras de bioseguridad en áreas que a menudo reciben 
+                                menos atención y son más vulnerables. Fortalecemos la corresponsabilidad y el compromiso para prevenir 
+                                infecciones y promover la protección y salud de la población.</p>
+                            <h5 class="hidden">Valores</h5>
+                            <p class="m-0 hidden">El respeto y el bienestar de los demás son nuestra prioridad. Tratamos a todas las personas, 
+                                ya sean clientes, proveedores o empleados, con igualdad y cortesía. Los directivos de la empresa se 
+                                esfuerzan por ser ejemplos a seguir, contribuyendo así a la promoción de condiciones dignas. Nuestra 
+                                responsabilidad es garantizar el bienestar familiar y la dignidad laboral de todo nuestro personal.</p>
+                            <h5 class="hidden">Política de calidad</h5>
+                            <p class="m-0 hidden">El respeto y el bienestar de los demás son nuestra prioridad. Tratamos a todas las personas, 
+                                ya sean clientes, proveedores o empleados, con igualdad y cortesía. Los directivos de la empresa se 
+                                esfuerzan por ser ejemplos a seguir, contribuyendo así a la promoción de condiciones dignas. Nuestra 
+                                responsabilidad es garantizar el bienestar familiar y la dignidad laboral de todo nuestro personal.</p>
+                            
+                            <!-- Agrega un botón "Leer más" con un evento onclick -->
+                            <p></p>
+                            <button class="btn btn-primary rounded-pill" id="leerMasBtn">Leer más</button>
+                            <button id="ocultarBtn" class="hidden btn btn-primary rounded-pill">Ocultar</button>
+                        </div>
+                        <!-- Agrega aquí tus enlaces a archivos JavaScript si es necesario -->
+                        <script>
+                            // Obtén los elementos con la clase 'hidden'
+                            const hiddenElements = document.querySelectorAll('.hidden');
+
+                            // Oculta inicialmente los elementos con la clase 'hidden'
+                            hiddenElements.forEach(element => {
+                                element.style.display = 'none';
+                            });
+
+                            // Agrega un evento click al botón "Leer más"
+                            document.getElementById('leerMasBtn').addEventListener('click', function () {
+                                // Muestra los elementos ocultos al hacer clic
+                                hiddenElements.forEach(element => {
+                                    element.style.display = 'block';
+                                });
+
+                                // Oculta el botón "Leer más" y muestra el botón "Ocultar"
+                                this.style.display = 'none';
+                                document.getElementById('ocultarBtn').style.display = 'block';
+                            });
+
+                            // Agrega un evento click al botón "Ocultar"
+                            document.getElementById('ocultarBtn').addEventListener('click', function () {
+                                // Oculta los elementos previamente mostrados
+                                hiddenElements.forEach(element => {
+                                    element.style.display = 'none';
+                                });
+
+                                // Oculta el botón "Ocultar" y muestra el botón "Leer más"
+                                this.style.display = 'none';
+                                document.getElementById('leerMasBtn').style.display = 'block';
+                            });
+                        </script>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+<!-- Products Start -->
+<div class="container-fluid product py-5 my-5" id="services">
+    <div class="container py-5">
+        <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <p class="fs-5 fw-medium fst-italic text-primary">Nuestros Servicios</p>
+            <h4>Incluimos una amplia gama de soluciones para satisfacer tus necesidades específicas.</h4>
+        </div>
+        <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
+            <!-- Control de plagas residenciales -->
+            <div class="product-item-container">
+                <a href="javascript:void(0);" class="d-block shadow-sm product-item rounded open-modal" data-toggle="modal" data-target="#modalResidenciales">
+                    <img src="img/services/cucaracha.jpg" alt="" class="imagen-oscura redondear-imagen">
+                    <div class="text-overlay"><h2 class="text-light main-text">Control plagas residenciales</h4></div>
+                    <div class="text-overlay">
+                        <div class="text-light hover-text">
+                            <h5 class="text-primary">Control plagas residenciales</h5>
+                            <p class="p-imagen">Protegemos tu hogar de las plagas comunes, como insectos rastreros (hormigas, cucarachas, arañas), roedores, termitas y mosquitos, entre otros.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Control de plagas comerciales -->
+            <div class="product-item-container">
+                <a href="#" class="d-block shadow-sm product-item rounded open-modal" data-toggle="modal" data-target="#modalComerciales">
+                    <img src="img/services/rata_cocina.jpg" alt="" class="imagen-oscura redondear-imagen">
+                    <div class="text-overlay"><h2 class="text-light main-text">Control plagas comerciales</h4></div>
+                    <div class="text-overlay">
+                        <div class="text-light hover-text">
+                            <h5 class="text-primary">Control plagas comerciales</h5>
+                            <p class="p-imagen">Mantenemos tu establecimiento comercial libre de plagas para preservar la reputación de tu negocio y la satisfacción de tus clientes.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Control de plagas industriales -->
+            <div class="product-item-container">
+                <a href="#" class="d-block shadow-sm product-item rounded open-modal" data-toggle="modal" data-target="#modalIndustriales">
+                    <img src="img/services/chinches.jpg" alt="" class="imagen-oscura redondear-imagen">
+                    <div class="text-overlay"><h2 class="text-light main-text">Control plagas industriales</h4></div>
+                    <div class="text-overlay">
+                        <div class="text-light hover-text">
+                            <h5 class="text-primary">Control plagas industriales</h5>
+                            <p class="p-imagen">Brindamos soluciones para empresas industriales, ayudando a controlar plagas que pueden afectar la producción y la seguridad en el lugar de trabajo.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Control de plagas hospitalarias -->
+            <div class="product-item-container">
+                <a href="#" class="d-block shadow-sm product-item rounded open-modal" data-toggle="modal" data-target="#modalHospitalarias">
+                    <img src="img/services/coronavirus.jpg" alt="" class="imagen-oscura redondear-imagen">
+                    <div class="text-overlay"><h2 class="text-light main-text">Control plagas hospitalarias</h4></div>
+                    <div class="text-overlay">
+                        <div class="text-light hover-text">
+                            <h5 class="text-primary">Control plagas hospitalarias</h5>
+                            <p class="p-imagen">Desinfectamos instalaciones de atención médica para mantener un entorno limpio y seguro para pacientes, personal médico.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tratamiento contra termitas -->
+            <div class="product-item-container">
+                <a href="#" class="d-block shadow-sm product-item rounded open-modal" data-toggle="modal" data-target="#modalTermitas">
+                    <img src="img/services/termitas.jpg" alt="" class="imagen-oscura redondear-imagen">
+                    <div class="text-overlay"><h2 class="text-light main-text">Tratamiento contra termitas</h4></div>
+                    <div class="text-overlay">
+                        <div class="text-light hover-text">
+                            <h5 class="text-primary">Tratamiento contra termitas</h5>
+                            <p class="p-imagen">Realizamos inspecciones y tratamientos para el control y la erradicación de termitas, protegiendo la estructura de tu propiedad.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Control de roedores -->
+            <div class="product-item-container">
+                <a href="#" class="d-block shadow-sm product-item rounded open-modal" data-toggle="modal" data-target="#modalRoedores">
+                    <img src="img/services/ratones.jpg" alt="" class="imagen-oscura redondear-imagen">
+                    <div class="text-overlay"><h2 class="text-light main-text">Control de roedores</h4></div>
+                    <div class="text-overlay">
+                        <div class="text-light hover-text">
+                            <h5 class="text-primary">Control de roedores</h5>
+                            <p class="p-imagen">Ofrecemos control de ratas y ratones, utilizando métodos eficaces para eliminar estas plagas y prevenir futuras infestaciones.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Control de insectos voladores -->
+            <div class="product-item-container">
+                <a href="#" class="d-block shadow-sm product-item rounded open-modal" data-toggle="modal" data-target="#modalInsectosVoladores">
+                    <img src="img/services/moscas.jpg" alt="" class="imagen-oscura redondear-imagen">
+                    <div class="text-overlay"><h2 class="text-light main-text">Control de insectos voladores</h4></div>
+                    <div class="text-overlay">
+                        <div class="text-light hover-text">
+                            <h5 class="text-primary">Control de insectos voladores</h5>
+                            <p class="p-imagen">Ofrecemos soluciones para el control de moscas, mosquitos y otros insectos voladores que pueden ser una molestia en tu entorno.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="product-item-container">
+                <a href="#" class="d-block shadow-sm product-item rounded open-modal" data-toggle="modal" data-target="#modalSanitizacionDesinfeccion">
+                    <img src="img/services/desinfeccion.jpg" alt="" class="imagen-oscura redondear-imagen">
+                    <div class="text-overlay">
+                        <h2 class="text-light main-text">Sanitización y Desinfección</h4>
+                    </div>
+                    <div class="text-overlay">
+                        <div class="text-light hover-text">
+                            <h5 class="text-primary">Sanitización y Desinfección</h5>
+                            <p class="p-imagen">Ofrecemos servicios de sanitización y desinfección para garantizar un ambiente limpio y seguro. Protege tu entorno de gérmenes y bacterias.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Servicio de Fumigación de Vectores -->
+            <div class="product-item-container">
+                <a href="#" class="d-block shadow-sm product-item rounded open-modal" data-toggle="modal" data-target="#modalFumigacionVectores">
+                    <img src="img/services/mosquito.jpg" alt="" class="imagen-oscura redondear-imagen">
+                    <div class="text-overlay"><h2 class="text-light main-text">Servicio de Fumigación de Vectores capañas de salud</h4></div>
+                    <div class="text-overlay">
+                        <div class="text-light hover-text">
+                            <h5 class="text-primary">Fumigación para la Prevención de Dengue, Chikungunya y Zika</h5>
+                            <p class="p-imagen">Ofrecemos servicios de fumigación especializados para la prevención de enfermedades transmitidas por vectores 
+                                como el Dengue, Chikungunya y Zika. Mantén tu entorno seguro y libre de estos peligrosos vectores.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Desinsectación de Jardines y Áreas Verdes -->
+            <div class="product-item-container">
+                <a href="#" class="d-block shadow-sm product-item rounded open-modal" data-toggle="modal" data-target="#modalDesinsectacionJardines">
+                    <img src="img/services/jardines.jpeg" alt="" class="imagen-oscura redondear-imagen">
+                    <div class="text-overlay"><h2 class="text-light main-text">Desinsectación de Jardines y Áreas Verdes</h4></div>
+                    <div class="text-overlay">
+                        <div class="text-light hover-text">
+                            <h5 class="text-primary">Desinsectación de Jardines y Áreas Verdes</h5>
+                            <p class="p-imagen">Nuestros servicios de desinsectación están diseñados para mantener tus jardines y áreas verdes libres de plagas y insectos no deseados. Protege la belleza de tu entorno natural.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- Products End -->
+<!-- Ventana flotante/modal para Sanitización y Desinfección -->
+<div class="modal fade" id="modalSanitizacionDesinfeccion" tabindex="-1" role="dialog" aria-labelledby="modalSanitizacionDesinfeccion" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="fs-5 fw-medium fst-italic text-primary" id="modalSanitizacionDesinfeccionLabel">Sanitización y Desinfección</h5>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <p class="text-light">Ofrecemos servicios de sanitización y desinfección para garantizar un ambiente limpio y seguro. Protege tu entorno de gérmenes y bacterias.</p>
+                    <p class="text-light">Nuestros servicios incluyen la desinfección de áreas residenciales y comerciales, eliminando eficazmente virus y bacterias perjudiciales.</p>
+                    <p class="text-light">¡Contáctanos para obtener más información y programar una visita!</p>
+                </div>
+                <div><img class="img-fluid" src="img/services/sanitizacion.jpg" alt=""></div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://wa.me/5212223844173" target="_blank" type="button" class="btn btn-primary rounded-pill">Contactarnos</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ventana flotante/modal para Desinsectación de Jardines y Áreas Verdes -->
+<div class="modal fade" id="modalDesinsectacionJardines" tabindex="-1" role="dialog" aria-labelledby="modalDesinsectacionJardines" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="fs-5 fw-medium fst-italic text-primary" id="modalDesinsectacionJardinesLabel">Desinsectación de Jardines y Áreas Verdes</h5>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <p class="text-light">Ofrecemos servicios de desinsectación especializados para jardines y áreas verdes. Mantén tus espacios al aire libre libres de plagas y mosquitos.</p>
+                    <p class="text-light">Nuestros servicios incluyen la eliminación eficaz de insectos y plagas que pueden afectar tu jardín o área verde, garantizando un entorno seguro y agradable.</p>
+                    <p class="text-light">¡Contáctanos para obtener más información y programar una visita!</p>
+                </div>
+                <div><img class="img-fluid" src="img/services/desinsectacion-jardines.jpg" alt=""></div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://wa.me/5212223844173" target="_blank" type="button" class="btn btn-primary rounded-pill">Contactarnos</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Ventana flotante/modal para Servicio de Fumigación de Vectores -->
+<div class="modal fade" id="modalFumigacionVectores" tabindex="-1" role="dialog" aria-labelledby="modalFumigacionVectores" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="fs-5 fw-medium fst-italic text-primary" id="modalFumigacionVectoresLabel">Fumigación de Vectores</h5>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <p class="text-light">Ofrecemos servicios de fumigación especializados para la prevención de contagios de Dengue, Chikungunya y Zika.</p>
+                    <p class="text-light">Nuestra fumigación elimina eficazmente los vectores transmisores de estas enfermedades, manteniendo tu entorno seguro y protegido.</p>
+                    <p class="text-light">¡Contáctanos para obtener más información y programar una visita!</p>
+                </div>
+                <div><img class="img-fluid" src="img/services/png/mosquito.png" alt=""></div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://wa.me/5212223844173" target="_blank" type="button" class="btn btn-primary rounded-pill">Contactarnos</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Ventana flotante/modal para Control de plagas residenciales -->
+<div class="modal fade" id="modalResidenciales" tabindex="-1" role="dialog" aria-labelledby="modalResidencialesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="fs-5 fw-medium fst-italic text-primary" id="modalResidencialesLabel">Control de plagas residenciales</h5>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <p class="text-light">Protegemos tu hogar de las plagas comunes, como insectos rastreros (hormigas, cucarachas, arañas), roedores, termitas y mosquitos, entre otros.</p>
+                    <p class="text-light">Nuestros servicios incluyen inspección, tratamiento y prevención de plagas para mantener tu hogar seguro y libre de infestaciones.</p>
+                    <p class="text-light">¡Contáctanos para obtener más información y programar una visita!</p>
+                </div>
+                <div><img class="img-fluid" src="img/services/png/cucaracha.png" alt=""></div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://wa.me/5212223844173" target="_blank" type="button" class="btn btn-primary rounded-pill">Contactarnos</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ventana flotante/modal para Control de plagas comerciales -->
+<div class="modal fade" id="modalComerciales" tabindex="-1" role="dialog" aria-labelledby="modalComercialesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="fs-5 fw-medium fst-italic text-primary" id="modalComercialesLabel">Control de plagas comerciales</h5>
+            </div>
+            <div class="modal-body">
+                <p class="text-light">Mantenemos tu establecimiento comercial libre de plagas para preservar la reputación de tu negocio y la satisfacción de tus clientes.</p>
+                <p class="text-light">Nuestros servicios de control de plagas se adaptan a las necesidades de tu negocio y cumplen con las regulaciones sanitarias.</p>
+                <p class="text-light">¡Contáctanos para una evaluación gratuita y personalizada!</p>
+                <div><img class="img-fluid" src="img/services/png/raton.png" alt=""></div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://wa.me/5212223844173" target="_blank" type="button" class="btn btn-primary rounded-pill">Contactarnos</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ventana flotante/modal para Control de plagas industriales -->
+<div class="modal fade" id="modalIndustriales" tabindex="-1" role="dialog" aria-labelledby="modalIndustrialesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="fs-5 fw-medium fst-italic text-primary" id="modalIndustrialesLabel">Control de plagas industriales</h5>   
+            </div>
+            <div class="modal-body">
+                <p class="text-light">Brindamos soluciones para empresas industriales, ayudando a controlar plagas que pueden afectar la producción y la seguridad en el lugar de trabajo.</p>
+                <p class="text-light">Nuestros servicios incluyen inspección, tratamiento y mantenimiento preventivo para garantizar un entorno de trabajo libre de plagas.</p>
+                <p class="text-light">¡Contáctanos para una evaluación y planificación de servicios!</p>
+                <div><img class="img-fluid" src="img/services/png/escarabajo.png" alt=""></div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://wa.me/5212223844173" target="_blank" type="button" class="btn btn-primary rounded-pill">Contactarnos</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ventana flotante/modal para Control de plagas hospitalarias -->
+<div class="modal fade" id="modalHospitalarias" tabindex="-1" role="dialog" aria-labelledby="modalHospitalariasLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="fs-5 fw-medium fst-italic text-primary" id="modalHospitalariasLabel">Control de plagas hospitalarias</h5>  
+            </div>
+            <div class="modal-body">
+                <p class="text-light">Desinfectamos instalaciones de atención médica para mantener un entorno limpio y seguro para pacientes y personal médico.</p>
+                <p class="text-light">Nuestros servicios cumplen con los estándares de higiene más altos y ayudan a prevenir la propagación de enfermedades.</p>
+                <p class="text-light">¡Contáctanos para programar servicios de desinfección y control de plagas en instalaciones hospitalarias!</p>}
+                <div><img class="img-fluid" src="img/services/png/virus.png" alt=""></div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://wa.me/5212223844173" target="_blank" type="button" class="btn btn-primary rounded-pill">Contactarnos</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ventana flotante/modal para Tratamiento contra termitas -->
+<div class="modal fade" id="modalTermitas" tabindex="-1" role="dialog" aria-labelledby="modalTermitasLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="fs-5 fw-medium fst-italic text-primary" id="modalTermitasLabel">Tratamiento contra termitas</h5> 
+            </div>
+            <div class="modal-body">
+                <p class="text-light">Realizamos inspecciones y tratamientos para el control y la erradicación de termitas, protegiendo la estructura de tu propiedad.</p>
+                <p class="text-light">Nuestros servicios incluyen soluciones efectivas para prevenir futuras infestaciones de termitas y garantizar la integridad de tu edificio.</p>
+                <p class="text-light">¡Contáctanos para proteger tu propiedad contra las termitas!</p>
+                <div><img class="img-fluid" src="img/services/png/Termite.png" alt=""></div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://wa.me/5212223844173" target="_blank" type="button" class="btn btn-primary rounded-pill">Contactarnos</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ventana flotante/modal para Control de roedores -->
+<div class="modal fade" id="modalRoedores" tabindex="-1" role="dialog" aria-labelledby="modalRoedoresLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="fs-5 fw-medium fst-italic text-primary" id="modalRoedoresLabel">Control de roedores</h5>
+            </div>
+            <div class="modal-body">
+                <p class="text-light">Ofrecemos control de ratas y ratones, utilizando métodos eficaces para eliminar estas plagas y prevenir futuras infestaciones.</p>
+                <p class="text-light">Nuestros servicios son ideales para hogares y negocios que enfrentan problemas con roedores.</p>
+                <p class="text-light">¡Contáctanos para eliminar roedores de manera segura y efectiva!</p>
+                <div><img class="img-fluid" src="img/services/png/raton.png" alt=""></div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://wa.me/5212223844173" target="_blank" type="button" class="btn btn-primary rounded-pill">Contactarnos</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ventana flotante/modal para Control de insectos voladores -->
+<div class="modal fade" id="modalInsectosVoladores" tabindex="-1" role="dialog" aria-labelledby="modalInsectosVoladoresLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="fs-5 fw-medium fst-italic text-primary" id="modalInsectosVoladoresLabel">Control de insectos voladores</h5>  
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="text-light">Ofrecemos soluciones para el control de moscas, mosquitos y otros insectos voladores que pueden ser una molestia en tu entorno.</p>
+                <p class="text-light">Nuestros servicios ayudan a mantener espacios libres de insectos voladores no deseados, mejorando la comodidad y la higiene.</p>
+                <p class="text-light">¡Contáctanos para deshacerte de los insectos voladores de manera efectiva!</p>
+                <div><img class="img-fluid" src="img/services/png/mosquito.png" alt=""></div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://wa.me/5212223844173" target="_blank" type="button" class="btn btn-primary rounded-pill">Contactarnos</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    // Espera a que el documento esté listo
+    document.addEventListener("DOMContentLoaded", function () {
+        // Agrega un controlador de eventos clic a los enlaces con la clase "open-modal"
+        const openModalLinks = document.querySelectorAll(".open-modal");
+        openModalLinks.forEach(function (link) {
+            link.addEventListener("click", function (event) {
+                event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+                const targetModalId = this.getAttribute("data-target");
+                const targetModal = document.querySelector(targetModalId);
+                if (targetModal) {
+                    $(targetModal).modal("show"); // Abre la ventana flotante/modal utilizando jQuery (Bootstrap)
+                }
+            });
+        });
+    });
+</script>
+
+    <!-- Article Start -->
+
+    <!-- Article End -->
+
+
+    <!-- Video Start -->
+
+    <!-- Video End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="container-fluid video" style="margin-top: 6rem; margin-bottom: 6rem;" id="blog">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-6 py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="py-5">
+                        <h1 class="display-6 mb-4">Por un entorno <span class="text-primary">saludable</span> y libre de <span class="text-primary">plagas</span></h1>
+                        <h5 class="fw-normal lh-base fst-italic mb-5">Nuestro compromiso es brindarte soluciones efectivas y personalizadas para garantizar un ambiente seguro y libre de plagas.</h5>
+                        <div class="row g-4 mb-5">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 btn-lg-square bg-dark text-primary rounded-circle me-3">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <span class="text-dark">Diagnóstico </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 btn-lg-square bg-dark text-primary rounded-circle me-3">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <span class="text-dark">Análisis de riesgo </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 btn-lg-square bg-dark text-primary rounded-circle me-3">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <span class="text-dark">Supervisión y monitoreo </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 btn-lg-square bg-dark text-primary rounded-circle me-3">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <span class="text-dark">Atención ante emergencias </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 btn-lg-square bg-dark text-primary rounded-circle me-3">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <span class="text-dark">Acompañamiento en Auditorias </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 btn-lg-square bg-dark text-primary rounded-circle me-3">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <span class="text-dark">Capacitación</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 btn-lg-square bg-dark text-primary rounded-circle me-3">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <span class="text-dark">Contamos con Licencia Sanitaria Cofepris</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="flex-shrink-0 btn-lg-square bg-dark text-primary rounded-circle me-3">
+                                        <i class="fa fa-check"></i>
+                                    </div>
+                                    <span class="text-dark">Se entrega Constancia de Servicio</span>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="h-100 d-flex align-items-center justify-content-center" style="min-height: 300px;">
+                        <button type="button" class="btn-play" data-bs-toggle="modal" data-bs-target="#videoModal">
+                            <i class="fas fa-play"></i> Abrir video
+                        </button>
+                    </div>
+                </div>                
+                
+                <!-- Modal -->
+                <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="fs-5 fw-medium fst-italic text-primary" id="videoModalLabel">Video</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <video controls width="100%">
+                                    <source src="img/ecobactery2.mp4" type="video/mp4">
+                                    Tu navegador no admite la reproducción de videos.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Video End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="fs-5 fw-medium fst-italic text-primary" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Store Start -->
+
+    <!-- Store End -->
+
+
+    <!-- Testimonial Start -->
+
+    <!-- Testimonial End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-xxl contact py-5" id="contact">
+        <div class="container">
+            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="fs-5 fw-medium fst-italic text-primary">Contactanos</p>
+                <h1 class="display-6">Contactanos ahora</h1>
+            </div>
+            <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-8">
+                    <p class="text-center mb-5">¡Nos encantaría saber de ti! Si tienes alguna pregunta, consulta o simplemente quieres ponerte en contacto con nosotros, no dudes en hacerlo.</p>
+                    <div class="row g-5">
+                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="btn-square mx-auto mb-3">
+                                <i class="fa fa-envelope fa-2x text-white"></i>
+                            </div>
+                            <p class="mb-2">e.esparza@ecobactery.com</p>
+                            <p class="mb-2">j.molina@ecobactery.com</p>
+                            <p class="mb-2">ventas@ecobactery.com</p>
+
+                        </div>
+                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="btn-square mx-auto mb-3">
+                                <i class="fa fa-phone fa-2x text-white"></i>
+                            </div>
+                            <p class="mb-2">+52 2228-87-5737</p>
+                            <p class="mb-2">+52 2223-51-9350</p>
+                            <p class="mb-0">+52 222-384-4173</p>
+                        </div>
+                        <div class="col-md-4 text-center wow fadeInUp" data-wow-delay="0.5s">
+                            <a href="https://maps.app.goo.gl/ERs1zSujHQzUuvzD8" target="_blank">
+                                <div class="btn-square mx-auto mb-3">
+                                    <i class="fa fa-map-marker-alt fa-2x text-white"></i>
+                                </div>
+                            </a>
+                            <p class="mb-2">C. Ejido 5947, San Baltazar</p>
+                            <p class="mb-0">Campeche, 72550 Puebla, Pue.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Start -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Nuestra Oficina</h4>
+                    <p class="mb-2"><i href="https://maps.app.goo.gl/ERs1zSujHQzUuvzD8" class="fa fa-map-marker-alt text-primary me-3"></i>Campeche, 72550 Puebla, Pue.</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+52 222-384-4173</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+52 2223-51-9350</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+52 2223-51-9350</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>ventas@ecobactery.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Enlaces Rápidos</h4>
+                    <a class="btn btn-link" href="">Acerca de Nosotros</a>
+                    <a class="btn btn-link" href="">Contacto</a>
+                    <a class="btn btn-link" href="">Nuestros Servicios</a>
+                    <a class="btn btn-link" href="">Términos y Condiciones</a>
+                    <a class="btn btn-link" href="">Soporte</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Horario de Atención</h4>
+                    <p class="mb-1">Lunes - Viernes</p>
+                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Sábado</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Domingo</p>
+                    <h6 class="text-light">Cerrado</h6>
+                </div>
+                <!-- Formulario de Cotización -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-primary mb-4">Cotizar</h4>
+                    <p>Pide ya tu cotización</p>
+                    <div class="position-relative w-100">
+                        <button type="submit" class="btn btn-primary rounded-pill py-2 position top-0 end-0 mt-0 me-0" onclick="redirigir()">Cotizar</button>
+                    <script>
+                    function redirigir() {
+                        window.location.href = "https://wa.me/5212223844173";
+                    }
+                    </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Enlace al archivo JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/enviar_cotizacion.js"></script>
+    
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-medium" href="#">Ecobactery</a>, All Right Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="https://wa.me/5212223844173" class="whatsapp-float" target="_blank">
+        <img src="img/whatsapp.png" alt="WhatsApp">
+    </a>
+      
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/loader.js"></script>
+</body>
+
+</html>
